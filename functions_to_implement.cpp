@@ -17,7 +17,8 @@ std::string RemoveFirstSubstring(std::string s1, std::string s2);
 std::string Join(std::vector<std::string> pieces, std::string glue)
 {
 	string together = "";
-	for (int i = 0; i < pieces.size(); i++)
+	int length = pieces.size();
+	for (int i = 0; i < length; i++)
 	{
 		if (i + 1 == pieces.size())
 		{
@@ -68,7 +69,8 @@ int Product(std::vector<int> nums)
 		return 0;
 	}
 	int total = 1;
-	for (int i = 0; i < nums.size(); i++)
+	int length = nums.size();
+	for (int i = 0; i < length; i++)
 	{
 		total = total * nums[i];
 	}
