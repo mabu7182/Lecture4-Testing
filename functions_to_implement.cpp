@@ -20,7 +20,7 @@ std::string Join(std::vector<std::string> pieces, std::string glue)
 	int length = pieces.size();
 	for (int i = 0; i < length; i++)
 	{
-		if (i + 1 == pieces.size())
+		if (i + 1 == length)
 		{
 			return together;
 		}
@@ -54,7 +54,8 @@ std::vector<bool> OddMask(std::vector<int>);
 int Sum(std::vector<int> nums)
 {
 	int total = 0;
-	for (int i = 0; i < nums.size(); i++)
+	int length = nums.size();
+	for (int i = 0; i < length; i++)
 	{
 		total = total + nums[i];
 	}
